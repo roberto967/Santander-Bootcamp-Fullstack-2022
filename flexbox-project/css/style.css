@@ -59,6 +59,7 @@ header .menu {
 
 .apresentacao .texto-apresentacao {
   min-height: 12.5rem;
+  width: 100%;
 }
 
 .texto-apresentacao h1 {
@@ -85,6 +86,11 @@ header .menu {
   justify-content: space-between;
 
   flex-direction: row-reverse;
+}
+
+#quem-somos img {
+  min-width: 20rem;
+  margin: auto;
 }
 
 #quem-somos h2 {
@@ -160,11 +166,17 @@ header .menu {
 #planos {
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 3.125rem;
+}
+
+#planos h2 {
+  font-size: 2rem;
 }
 
 .lista-planos {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .item-plano {
@@ -172,6 +184,7 @@ header .menu {
   border: 0.313rem solid #122a57;
   margin-right: 1.25rem;
   padding: 0.625rem;
+  max-width: 15rem;
 }
 
 .item-plano.btn {
@@ -184,6 +197,7 @@ header .menu {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 1.25rem;
 }
 
 .item-plano h3::after {
@@ -192,11 +206,78 @@ header .menu {
   width: 100%;
   height: 0.125rem;
   margin-top: 1.25rem;
-  margin-bottom: 0.625rem;
 }
 
 .item-plano ul {
   padding: 0.625rem 1.25rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.625rem;
+}
+
+.item-plano ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.item-plano ul li::before {
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #122a57;
+  margin-right: 0.313rem;
+}
+
+footer {
+  background-color: #122a57;
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer {
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* mobile */
+@media (max-width: 62rem) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverses;
+  }
+
+  .apresentacao .texto-apresentacao {
+    width: 100%;
+  }
+
+  #quem-somos {
+    flex-direction: column-reverse;
+  }
+
+  .lista-servicos {
+    flex-direction: column;
+  }
+
+  .item-servico img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .lista-planos {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+  }
+
+  .lista-planos .item-plano {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
 }
