@@ -1,0 +1,137 @@
+:root {
+  --background: #fafafa;
+  --loginColor: #0095f6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img {
+  height: 50rem;
+}
+
+.instagram-entrar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  width: 21.875rem;
+  padding: 1.3rem 0;
+  border: 0.063rem solid lightgray;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.btn {
+  padding: 0.313rem 0.563rem;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: inherit;
+  user-select: none;
+  width: auto;
+  display: block;
+}
+
+.instagram-login {
+  background-color: var(--loginColor);
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin: 0 2.5rem 0.375rem;
+}
+
+.login-inputs input {
+  display: flex;
+  padding-top: 0.875rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.125rem;
+}
+
+.login-inputs p {
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  color: #aea7a1;
+  flex-shrink: 0;
+  font-size: 0.813rem;
+  font-weight: 600;
+  line-height: 0.938rem;
+  margin: 0 1.188rem;
+  text-transform: uppercase;
+}
+
+.login-inputs p:before,
+.login-inputs p:after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 5.3em;
+  height: 0.05em;
+  background-color: #aea7a1;
+  left: -1.25em;
+}
+
+.login-inputs p:after {
+  left: initial;
+  right: -1.25em;
+}
+
+.ou {
+  margin: 0.625rem 2.5rem 1.125rem;
+}
